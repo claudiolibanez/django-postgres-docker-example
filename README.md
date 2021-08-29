@@ -1,6 +1,6 @@
 # Django, PostgreSQL and Docker example
 
-Virtualenv and install django
+# Virtualenv and install django
 
 ```console
 $ py -m venv venv
@@ -9,31 +9,37 @@ $ .\venv\Scripts\activate
 $ pip install django
 ```
 
-Create project
+## Create project
 
 ```console
 $ django-admin startproject <project_name> .
 ```
 
-Create app
+## Create app
 
 ```console
 $ django-admin startapp <app_name>
 ```
 
-Run docker
+## How to run project
+
+<br>
+
+- No terminal, execute o comando
+
+<br>
 
 ```console
 $ docker-compose up -d
 ```
 
-Run migrate
+## Run migrate
 
 ```console
 $ docker-compose exec web python manage.py migrate
 ```
 
-Create superadmin
+## Create superadmin
 
 ```console
 $ docker-compose exec web python manage.py createsuperuser
